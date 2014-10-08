@@ -2,25 +2,71 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+.container{
+  min-width:990px;
+  width:1300px;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+
+.header{
+  border:solid;
+  border-width:1px;
+  height:80px
+
+}
+
+
+.leftTitle{
+  margin-left:230px;
+  display:inline;
+}
+
+
+.browse{
+  margin-right:70px;
+}
+
+.midSec{
+  background-color:rgb(245, 245, 241);
+}
+
+.topMid{
+  height:55px;
+  width:975px;
+  margin-left:178px;
+  border:solid;
+  border-width:1px;
+}
+
+.sideBar{
+  float:left;
+  margin-left:178px;
+  border:solid;
+  height:1120px;
+  width:220px;
+  margin-right:30px;
+}
+
+
+.rightSide{
+  float:left;
+  height:1000px;
+  width:725px;
+  border:solid;
+  border-width:1px;
+}
+
+.box{
+  border-width:1px;
+  border:solid;
+  float:left;
+  width:222px;
+  height:219px;
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
