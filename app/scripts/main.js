@@ -12,14 +12,14 @@ $(document).ready(function(){
 
         itemTitle="<li class='truncate'>"+x.title+"</li>";
 
-        itemShop=shop.shop_name;
+        itemShop=x.shop_name;
 
         x.Images.forEach(function (y) {
         itemImage ='<img src = "' + y.url_170x135 + '">';
 
         });
 
-        var allItems = "<div class='box'>" + itemTitle + itemImage + itemPrice + /*itemShop +*/ "</div>";
+        var allItems = "<div class='box'>" + itemTitle + itemImage + itemPrice + itemShop +"</div>";
           $('.rightSide').append(allItems);
       });
 
