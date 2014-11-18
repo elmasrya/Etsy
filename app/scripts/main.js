@@ -8,19 +8,20 @@ $(document).ready(function(){
 
 
       items.results.forEach(function (x) {
-        itemPrice=x.price + x.currency_code;
+        itemPrice=x.price + " " + x.currency_code;
 
-        itemTitle="<li class='truncate'>"+x.title+"</li>";
+        itemTitle="<li class='truncate'>" + x.title + "</li>";
 
-        itemShop=x.shop_name;
-
+        itemShop=x.Shop.shop_name;
         x.Images.forEach(function (y) {
         itemImage ='<img src = "' + y.url_170x135 + '">';
 
         });
 
-        var allItems = "<div class='box'>" + itemTitle + itemImage + itemPrice + itemShop +"</div>";
+        var allItems = "<div class='box'>" + itemTitle + itemImage + itemPrice + " " + itemShop + "</div>";
           $('.rightSide').append(allItems);
+          console.log(itemTitle);
+          console.log(itemPrice);
       });
 
 
