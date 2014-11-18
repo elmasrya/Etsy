@@ -15,13 +15,14 @@ $(document).ready(function(){
         itemShop=x.Shop.shop_name;
         x.Images.forEach(function (y) {
         itemImage ='<img src = "' + y.url_170x135 + '">';
-
         });
 
-        var allItems = "<div class='box'>" + itemTitle + itemImage + itemPrice + " " + itemShop + "</div>";
+        var allItems = "<div class='box'>" + "<div class='itemImage'>" + itemImage + "</div>" + "<span class='itemTitle'>"  +
+        itemTitle + "</span>" + " " + "<span class='itemShop'>" +
+        itemShop + "</span>" + "<span class='itemPrice'>" + itemPrice + "</span>" +"</div>";
+
           $('.rightSide').append(allItems);
-          console.log(itemTitle);
-          console.log(itemPrice);
+
       });
 
 
